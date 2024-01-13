@@ -95,6 +95,7 @@ img {
   letter-spacing: 0.02em;
   padding: 24px 0;
   display: block;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-link:hover {
@@ -104,6 +105,25 @@ img {
 .nav-link:focus {
   color: #404bbf;
 }
+
+.current {
+ position: relative;
+ color: #404BBF;
+}
+
+.current::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  background: #404BBF;
+  border-radius: 2px;
+  height: 4px;
+  width: 100%;
+}
+
+
+
 
 .address {
   font-style: normal;
@@ -123,6 +143,7 @@ img {
   font-size: 16px;
   line-height: 1.5; /* 150% */
   letter-spacing: 0.02em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-link:hover {
@@ -143,7 +164,6 @@ img {
   font-weight: 700;
   line-height: 1.07; /* 107.143% */
   letter-spacing: 0.02em;
-  background: var(--NAVY-BLUE, #2e2f42);
   max-width: 496px;
   margin: auto;
 }
@@ -151,10 +171,13 @@ img {
 .title {
   padding: 188px 0 188px;
   background-color: #2e2f42;
+  background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),url(../images/main-foto.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .title-container {
-
 }
 
 .button {
@@ -201,6 +224,19 @@ img {
 
 .benefits-item {
   flex-basis: calc((100% - 3 * 24px));
+}
+
+.icons-second-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 264px;
+  height: 112px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: 1px solid var(--LIGHT-SLATE, #8E8F99);
+  background: var(--CLOUD, #F4F4FD);
+  gap: 24px;
 }
 
 .benefits-name {
@@ -308,7 +344,7 @@ img {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   margin-bottom: 72px;
-   text-align: center;
+  text-align: center;
 }
 
 .portfolio-name {
