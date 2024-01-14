@@ -515,6 +515,14 @@ margin-bottom: 16px;
     background-color: #31d0aa; 
 }
 
+.footer-soc-icon:focus {
+  background-color: #31d0aa;
+}
+
+.icon-footer-styles {
+  fill: #f4f4fd;
+}
+
 .footer-text {
   color: var(--CLOUD, #f4f4fd);
 
