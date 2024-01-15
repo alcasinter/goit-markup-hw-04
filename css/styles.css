@@ -177,6 +177,8 @@ img {
   background-position: center;
   background-size: cover;
   max-width: 1440px; 
+  margin: 0 auto;
+
 }
 
 .title-container{}
@@ -292,7 +294,10 @@ img {
 .social-emblem {
   width: 40px;
   height: 40px;
-    margin-top: 8px;
+}
+
+.third-section-social {
+      margin-top: 8px;
 }
 
 .emblem {
@@ -462,7 +467,6 @@ footer {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   display: inline-block;
-  margin-top: 1.5px;
   margin-bottom: 16px;
 }
 
